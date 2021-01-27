@@ -1,0 +1,258 @@
+@import "reset.css";
+
+body{
+    background-color: white;
+}
+section{
+    width: 100%;
+    margin: auto;
+    padding-top: 3em;
+}
+.logotipo{
+    position: relative;
+    left: 5%;
+}
+.logotipo img{
+    width: auto;
+    height: auto;
+    margin-left: 0;
+}
+div.inicio{
+    display: flex;
+}
+nav{
+   display: flex;
+   transform: translate(10%);
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul{
+    list-style:none;
+    background-color: #42CA1D;
+}
+nav ul li a{
+    padding: 20px 50px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+nav ul li a:hover{
+    background-color:#88EC7C;
+    color: black;
+    border-bottom:3px solid #2A2FCA;
+    transition: 200ms;
+}
+.apresentacao{
+    width:100%;
+    height:100%;
+    margin-top: 50px;
+    background-size: cover;
+    position: relative;
+}
+.apresentacao img{
+    border-radius: 15px;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.apresentacao:hover img{
+    opacity: 0.5;
+}
+.meio{
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.meio a{
+    background-color: #016604;
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin-left: 40%;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.apresentacao:hover .meio{
+    opacity: 1;
+}
+.legenda{
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 16px 40px;
+    text-align: center;
+}
+hr{
+    width: auto; /*largura*/
+    margin-top: 4em;
+    margin-bottom: 4em; /*4 em pra cima e pra baixo e auto para centralizar*/
+    border: 1.5px solid; /*borda*/
+    color: #174516;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+h1{
+    font-family: 'Ubuntu';
+    font-size: 50px;
+    color: #174516;
+    text-align: center;
+    margin-top: 5%;
+    animation: animacao 1s ease-in-out 1 forwards;
+}
+h2{
+    text-transform: uppercase;
+    color: #174516;
+    font-size: 40px;
+    text-align: left;
+}
+.hero-image{
+    background-image: url(../imagens/contato.jpg);
+    background-size:cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-position: center;
+    border-radius: 5px;
+}
+.hero-text h2{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.tag{
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    margin-bottom: 4em;
+}
+form{
+    display: block;
+    margin-top: 0em;
+}
+fieldset{
+    background: linear-gradient(to left, rgb(61, 170, 243), rgb(7, 233, 158));;
+    border-radius: 5px;
+    background-color: #e4e4e4;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.39);
+    border: none;
+    color:black;
+    width: 40%;
+    margin:auto;
+    padding-block-start: 1em;
+    padding-inline-start: 1em;
+    padding-inline-end: 10em;
+    padding-block-end: 10em;
+    padding: 16px 20px 20px 16px;
+}
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: 'ABeeZee';
+}
+textarea[type=text], textarea{
+    width: 100%;
+    padding: 1em 1em 20em 1em;
+}
+input[type="submit"] {
+    align-items: center;
+    text-align: center;
+    cursor:pointer;
+    background-color: #0a06e9;
+    color: white;
+    font-size: medium;
+    border-radius: 5px;
+    padding: 1em 17em;
+    border: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.39);
+}
+a input:hover{
+    background-color: #20B40E;
+    color: black;
+    transition: 300ms;
+}
+footer{
+    width: 100%;
+    background-color: #B0EEB3;
+    padding: 2em 0;
+}
+.info{
+    display: flex;    
+    width: 70%;
+    margin: auto;
+    align-items: center;
+}
+.info ul{
+    list-style-type: none;
+}
+.esquerda{
+    width: 20em;
+    margin-right: 5em;
+}
+li.endereco{
+    font-weight: 700;
+}
+li.horario{
+    font-weight: 700;
+    margin-top: 1em;
+}
+li.telefone{
+    font-weight: 700;
+}
+li.email{
+    font-weight: 700;
+    margin-top: 1em;
+}
+span{
+    font-weight: 700;
+}
+.centro a{
+    text-decoration: none;
+    color: black;
+}
+.centro a:hover{
+    border-bottom:2px solid #8c00ff;
+    transition: 200ms;
+}
+.direita{
+    display: block;
+    margin-left: 5em;
+}
+.direita span{
+    display: block;
+}
+.direita ul{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+.direita a{
+    margin-right: 1.5em;
+}
+.direita a:hover{
+    border-bottom:3px solid #174516;
+    transition: 200ms;
+}
+
+@keyframes animacao{
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
